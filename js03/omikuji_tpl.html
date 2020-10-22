@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title>おみくじ</title>
+</head>
+<body>
+
+<header>
+    <h1>おみくじ</h1>
+</header>
+
+<main>
+    <ul>
+        <li id="pull">おみくじを引く</li>
+    </ul>
+    <p id="echo">おみくじ</p>
+</main>
+
+<footer id="uranai">☆彡</footer>
+<script>
+    //変数指定
+    const num = Math.ceil(Math.random() * 5);
+    const uranai = document.querySelector("#uranai");
+    //id
+const pull = document.querySelector("#pull");
+pull.onclick = function(){
+
+    if(num == 1){
+        echo.innerHTML = '<img src="daikichi.png" width="100px" height="250px">';
+        uranai.innerHTML = "ぐっすり寝れる。ラッキーアイテムはハンカチ";
+    }
+    if(num == 2){
+        echo.innerHTML = '<img src="chuukichi.png" width="100px" height="250px">';
+        uranai.innerHTML = "いいことあるかも。ラッキーアイテムはボールペン";
+    }
+    if(num == 3){
+        echo.innerHTML = '<img src="syoukichi.png" width="100px" height="250px">';
+        uranai.innerHTML = "まぁまぁの一日。ラッキーアイテムは犬";
+    }
+    if(num == 4){
+        echo.innerHTML = '<img src="kichi.png" width="100px" height="250px">';
+        uranai.innerHTML = "可もないけど不可もない。ラッキーアイテムはチョコ";
+    }
+    if(num == 5){
+        echo.innerHTML = '<img src="kyou.png" width="100px" height="250px">';
+        uranai.innerHTML = "何やってもだめ。寝よう。ラッキーアイテムはアメ";
+    }
+
+}
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
