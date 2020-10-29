@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title>じゃんけん</title>
+</head>
+<body>
+
+<header>
+  <h1>じゃんけん</h1>
+  <img src="janken.png" width="50%" height="80%">
+</header>
+
+<main>
+  <ul>
+    <li id="gu_btn"><img src="janken_gu.png" width="170px" height="170px">
+        <div class="caption1">グーを出す</div>
+    </li>
+    <li id="cho_btn"><img src="janken_choki.png" width="170px" height="170px">
+      <div class="caption2">チョキを出す</div>    
+    </li>
+    <li id="par_btn"><img src="janken_pa.png" width="170px" height="170px">
+      <div class="caption3">パーを出す</div>    
+    </li>
+  </ul>
+  <div id="you"></div>
+  <div><span id="pc_hands">コンピュータの出した手は？</span></div>
+  <div id="judgment"></div>
+</main>
+
+<footer></footer>
+<script>
+//じゃんけん用のSCRIPTを書いてください  
+
+// const gu =1;
+// const cho =2;
+// const par=3;
+var time = 500;
+var aLocate = $('#you').offset().top;
+
+  $("#gu_btn").on("click", function(){
+      const num = Math.ceil(Math.random() *3);
+      $(window).scrollTop(aLocate);
+
+      if(num == 1){
+        $("#you").html('<p>あなたの出した手は<img src="janken_gu.png" width="170px" height="170px"> </p>');
+          $("#pc_hands").html('<p>コンピューターの出した手は<img src="janken_gu.png" width="170px" height="170px"> </p>');
+          $("#judgment").html("<p>あいこ</p>");
+      }
+      if(num == 2){
+        $("#you").html('<p>あなたの出した手は<img src="janken_gu.png" width="170px" height="170px"> </p>');
+          $("#pc_hands").html('<p>コンピューターの出した手は<img src="janken_choki.png" width="170px" height="170px"> </p>');
+          $("#judgment").html("<p>YOU WIN</p>");
+      }
+      if(num == 3){
+        $("#you").html('<p>あなたの出した手は<img src="janken_gu.png" width="170px" height="170px"> </p>');
+          $("#pc_hands").html('<p>コンピューターの出した手は<img src="janken_pa.png" width="170px" height="170px"> </p>');
+          $("#judgment").html("<p>YOU LOSE</p>");
+      }
+  });
+
+  $("#cho_btn").on("click", function(){
+      const num = Math.ceil(Math.random() *3);
+      $(window).scrollTop(aLocate);
+
+      if(num == 1){
+        $("#you").html('<p>あなたの出した手は<img src="janken_choki.png" width="170px" height="170px"> </p>');
+          $("#pc_hands").html('<p>コンピューターの出した手は<img src="janken_gu.png" width="170px" height="170px"> </p>');
+          $("#judgment").html("<p>YOU LOSE</p>");
+      }
+      if(num == 2){
+        $("#you").html('<p>あなたの出した手は<img src="janken_choki.png" width="170px" height="170px"> </p>');
+          $("#pc_hands").html('<p>コンピューターの出した手は<img src="janken_choki.png" width="170px" height="170px"> </p>');
+          $("#judgment").html("<p>あいこ</p>");
+      }
+      if(num == 3){
+        $("#you").html('<p>あなたの出した手は<img src="janken_choki.png" width="170px" height="170px"> </p>');
+          $("#pc_hands").html('<p>コンピューターの出した手は<img src="janken_pa.png" width="170px" height="170px"> </p>');
+          $("#judgment").html("<p>YOU WIN</p>");
+      }
+  });
+
+  $("#par_btn").on("click", function(){
+      const num = Math.ceil(Math.random() *3);
+      $(window).scrollTop(aLocate);
+
+      if(num == 1){
+        $("#you").html('<p>あなたの出した手は<img src="janken_pa.png" width="170px" height="170px"> </p>');
+          $("#pc_hands").html('<p>コンピューターの出した手は<img src="janken_gu.png" width="170px" height="170px"> </p>');
+          $("#judgment").html("<p>YOU WIN</p>");
+      }
+      if(num == 2){
+        $("#you").html('<p>あなたの出した手は<img src="janken_pa.png" width="170px" height="170px"> </p>');
+          $("#pc_hands").html('<p>コンピューターの出した手は<img src="janken_choki.png" width="170px" height="170px"> </p>');
+          $("#judgment").html("<p>YOU LOSE</p>");
+      }
+      if(num == 3){
+        $("#you").html('<p>あなたの出した手は<img src="janken_pa.png" width="170px" height="170px"> </p>');
+          $("#pc_hands").html('<p>コンピューターの出した手は<img src="janken_pa.png" width="170px" height="170px"> </p>');
+          $("#judgment").html("<p>あいこ</p>");
+      }
+  });
+
+    
+    
+    
+    
+    
+    
+    
+
+</script>
+</body>
+</html>
