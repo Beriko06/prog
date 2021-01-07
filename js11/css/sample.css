@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 16px;
+}
+
+header {
+  background-color: rgb(22, 190, 154);
+  border: none;
+  text-align: center;
+  color: #fff;
+}
+
+a:link{
+  color: rgb(27, 140, 233);
+}
+
+a:hover{
+  color: rgb(255, 255, 255);
+}
+
+a:visited{
+  color: rgb(39, 81, 116);
+}
+
+main {
+  border: none;
+}
+
+h2{
+  font-size:16px;
+}
+
+p {
+  font-size: 100%;
+  text-align: center;
+  border: none;
+  height: 100px;
+}
+
+ul {
+  padding: 0;
+  padding-bottom: 20px;
+  border-bottom: dashed 2px silver;
+  display: table;
+  /* 定義 */
+  table-layout: fixed;
+  width: 100%;
+}
+
+li {
+  color: black;
+  font-weight: bold;
+  border-left: solid 8px orange;/*左側の線*/
+  background: whitesmoke;/*背景色*/
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 5px;/*下のバーとの余白*/
+  line-height: 1.5;
+  border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
+  padding: 0.5em;
+  list-style-type: none!important;
+}
+
+li:hover {
+  background: #f56b5393;
+  color: #fff;
+}
+textarea{
+  margin: 3%;
+  width: 30%;
+  height: 30px;
+  font-size:50%;
+  box-shadow: 3px 3px 3px 3px #555;
+}
