@@ -1,0 +1,86 @@
+body{
+    
+    background-color: rgb(235, 234, 231);
+}
+#drowarea{
+    background-color: white;
+}
+#pen_btn{
+    margin-bottom: 1rem;
+    width: 80%;
+    height: 40px;
+    max-width: 120px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ed576c;
+    border: 2px solid #ffa44f;
+    border-radius: 5px;
+}
+#eraser_btn{
+    margin-bottom: 1rem;
+    width: 80%;
+    height: 40px;
+    max-width: 120px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ed576c;
+    border: 2px solid #ffa44f;
+    border-radius: 5px;
+}
+#clear_btn{
+    margin-bottom: 1rem;
+    width: 80%;
+    height: 40px;
+    max-width: 120px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ed576c;
+    border: 2px solid #ffa44f;
+    border-radius: 5px;
+}
+#save_btn{
+    margin-bottom: 1rem;
+    width: 80%;
+    height: 40px;
+    max-width: 120px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ed576c;
+    border: 2px solid #ffa44f;
+    border-radius: 5px;
+}
+#load_btn{
+    margin-bottom: 1rem;
+    width: 80%;
+    height: 40px;
+    max-width: 180px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ed576c;
+    border: 2px solid #ffa44f;
+    border-radius: 5px;
+}
+#text{
+    padding-right: 8rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0.3rem;
+}
+#text_x{
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    margin-top: 0.5rem;
+    
+}
+#text_y{
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    margin-top: 0.5rem;
+    
+}
